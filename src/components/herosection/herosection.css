@@ -1,0 +1,126 @@
+/* FullScreenCarousel.css */
+.full-screen-carousel {
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  animation: fadeInDown;
+  animation-duration: 1.5s;
+}
+
+.hero-container {
+  width: 100%;
+  height: 700px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgb(0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.842) 35%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 80px;
+  margin-left: 200px;
+}
+.hero-title > h1 > mark {
+  background-color: #000;
+  color: #fff;
+}
+
+.hero-para {
+  width: 70%;
+}
+.hero-para > p {
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  color: #fff;
+}
+.hero-cta > button {
+  width: auto;
+  height: 60px;
+  padding: 20px;
+  border-style: none;
+  background-color: #fea12a;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+.carousel-list {
+  position: absolute;
+  margin-left: 200px;
+  bottom: 20px;
+  display: flex;
+  column-gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.carousel-list li {
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.carousel-list li.active {
+  color: #fea12a;
+}
+
+.carousel-list li:hover {
+  color: #fea12a;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .hero-content {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .hero-para {
+    width: auto;
+  }
+  .hero-para > p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .carousel-list {
+    display: none;
+  }
+}

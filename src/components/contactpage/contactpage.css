@@ -1,0 +1,39 @@
+.contact-page {
+  margin-top: 40px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.contact-container {
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+}
+.contact-box {
+  background: rgba(0, 0, 0, 0.55);
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+  display: flex;
+}
+.contact-box > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 80px;
+}
+.contact-box > div > p {
+  font-size: 20px;
+  color: #fff;
+}
+.contact-box > div > p > span {
+  color: coral;
+}
+.contact-box > div > h1 {
+  color: #fff;
+  font-family: "playfair display";
+  font-size: 50px;
+  text-align: left;
+  margin-top: -5px;
+}

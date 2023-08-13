@@ -1,0 +1,76 @@
+.project-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-content > h1 {
+  font-size: 50px;
+  margin-top: -20px;
+}
+.project-card {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 34px;
+}
+
+.card-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.card-box > img {
+  display: block;
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  margin-top: 125px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8464635854341737) 0%,
+    rgba(0, 0, 0, 0.552) 35%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 310px;
+  transition: 0.5s ease;
+  opacity: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.overlay > h4 {
+  color: #fff;
+}
+.overlay > p {
+  color: #fff;
+}
+.card-box:hover .overlay {
+  opacity: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .project-section {
+    margin-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .project-card {
+    justify-content: center;
+    align-items: center;
+  }
+}

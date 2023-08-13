@@ -1,0 +1,86 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.services-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.services-title {
+  width: 80%;
+  text-align: left;
+}
+
+.services-title > h1 {
+  font-size: 50px;
+}
+.services-cta > button {
+  height: 60px;
+  width: 200px;
+  border-style: none;
+  background-color: #fea12a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 34px;
+  cursor: pointer;
+}
+.services-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  animation: fadeInDown;
+  animation-duration: 1s;
+}
+
+.services-card > img {
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+}
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 150px;
+  background-color: #ebebeb;
+}
+.card-text > span {
+  color: #fea12a;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .services {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .services-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .services-title {
+    width: auto;
+  }
+  .services-title > h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .card {
+    align-items: center;
+    justify-content: center;
+  }
+}

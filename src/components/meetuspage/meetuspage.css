@@ -1,0 +1,39 @@
+.meetus-page {
+  margin-top: 40px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.meetus-container {
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+}
+.meetus-box {
+  background: rgba(0, 0, 0, 0.55);
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+  display: flex;
+}
+.meetus-box > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 80px;
+}
+.meetus-box > div > p {
+  font-size: 20px;
+  color: #fff;
+}
+.meetus-box > div > p > span {
+  color: coral;
+}
+.meetus-box > div > h1 {
+  color: #fff;
+  font-family: "playfair display";
+  font-size: 50px;
+  text-align: left;
+  margin-top: -5px;
+}
