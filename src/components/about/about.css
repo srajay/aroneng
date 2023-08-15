@@ -34,7 +34,7 @@
   background-color: #fea12a;
   cursor: pointer;
 }
-.about-img {
+/* .about-img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,9 +49,8 @@
 .img-box > img {
   width: 500px;
   height: 400px;
-}
+} */
 
-/* 
 .about-data {
   display: flex;
   flex-direction: column;
@@ -81,7 +80,7 @@
 .data-rank > p {
   font-size: 20px;
   margin-top: -20px;
-} */
+}
 
 @media screen and (max-width: 768px) {
   .about {
@@ -104,10 +103,10 @@
   .about-img {
     width: 100%;
   }
-  /* .about-data {
+  .about-data {
     text-align: center;
   }
   .data > .side-rectangle {
     display: none;
-  } */
+  }
 }

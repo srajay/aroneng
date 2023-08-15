@@ -1,0 +1,56 @@
+.aronservices {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.aron-content {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: #1e1e1e;
+  cursor: pointer;
+}
+.aron-content > p {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.aron-content > p > span {
+  font-size: 30px;
+}
+.aronservices-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 34px;
+}
+.aron-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  width: 350px;
+}
+.aron-img {
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+}
+.aron-img > img {
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+}
+.aron-title {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.aron-para {
+  margin-left: 20px;
+  margin-right: 20px;
+}

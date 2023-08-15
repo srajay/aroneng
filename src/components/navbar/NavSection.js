@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./navsection.css";
 import { Link } from "react-router-dom";
 import AronLogo from "../../assets/aron-logo.png";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 // import MenuIcon from "@mui/icons-material/Menu";
 // import CloseIcon from "@mui/icons-material/Close";
 
@@ -46,14 +47,31 @@ const NavSection = () => {
                 SERVICES
               </p>
             </Link>
-            <Link to="/meetus">
-              <p
-                className={activeNavItem === "meetus" ? "active" : ""}
-                onClick={() => handleNavItemClick("meetus")}
-              >
+            <div class="dropdown">
+              <button class="dropbtn">
                 MEET US
-              </p>
-            </Link>
+                <ArrowDropDownIcon />
+              </button>
+              <div class="dropdown-content">
+                <Link to="/meetus">
+                  <p
+                    className={activeNavItem === "meetus" ? "active" : ""}
+                    onClick={() => handleNavItemClick("meetus")}
+                  >
+                    MEET US1
+                  </p>
+                </Link>
+                <Link to="/meetus">
+                  <p
+                    className={activeNavItem === "meetus" ? "active" : ""}
+                    onClick={() => handleNavItemClick("meetus")}
+                  >
+                    MEET US2
+                  </p>
+                </Link>
+              </div>
+            </div>
+
             <Link to="/carrier">
               <p
                 className={activeNavItem === "carrier" ? "active" : ""}
@@ -67,42 +85,6 @@ const NavSection = () => {
             </Link>
           </div>
         </div>
-        {/* <div className="navbar-menu">
-          {toggleMenu ? (
-            <CloseIcon
-              color="#000"
-              size={27}
-              onClick={() => setToggleMenu(false)}
-            />
-          ) : (
-            <MenuIcon
-              color="#000"
-              size={27}
-              onClick={() => setToggleMenu(true)}
-            />
-          )}
-          {toggleMenu && (
-            <div className="navbar-menu-container">
-              <div className="navbar-menu-container-links">
-                <p>
-                  <a href="#home">Home</a>
-                </p>
-                <p>
-                  <a href="#wgpt3">About US</a>
-                </p>
-                <p>
-                  <a href="#possibility">Contact</a>
-                </p>
-                <p>
-                  <a href="#features">our services</a>
-                </p>
-                <p>
-                  <a href="#blog">Projects</a>
-                </p>
-              </div>
-            </div>
-          )}
-        </div> */}
       </div>
     </>
   );

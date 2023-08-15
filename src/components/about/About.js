@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import AboutImg from "../../assets/bg3.jpg";
+// import AboutImg from "../../assets/bg3.jpg";
 
 const About = () => {
   return (
@@ -22,11 +22,35 @@ const About = () => {
             <button>Construction</button>
           </div>
         </div>
-        <div className="about-img">
+        <div className="about-data">
+          <div className="data">
+            <div className="side-rectangle"></div>
+            <div className="data-revenue">
+              <h1>Feature1</h1>
+              <p>2022 Revenues</p>
+            </div>
+          </div>
+
+          <div className="data">
+            <div className="side-rectangle"></div>
+            <div className="data-craft">
+              <h1>Feature2</h1>
+              <p>Craft and staff employees</p>
+            </div>
+          </div>
+          <div className="data">
+            <div className="side-rectangle"></div>
+            <div className="data-rank">
+              <h1>Feature3</h1>
+              <p>Rank in ENR's list of Top 400</p>
+            </div>
+          </div>
+        </div>
+        {/* <div className="about-img">
           <div className="img-box">
             <img src={AboutImg} alt="aboutimg" />
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

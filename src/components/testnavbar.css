@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  column-gap: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: brown;
+  width: 100%;
+}
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar p {
+  color: aliceblue;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  background-color: antiquewhite;
+}
+.hero h1 {
+  color: black;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 900px;
+  background-color: rgb(255, 189, 102);
+}
+.content h1 {
+  color: black;
+}
