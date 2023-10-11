@@ -37,16 +37,16 @@ const Footer = () => {
               <h1>LINKS</h1>
               <hr />
               <p>
-                <a href="Home">Home</a>
+                <Link to="/">Home</Link>
               </p>
               <p>
-                <a href="Products">Products</a>
+                <Link to="/portfolio">Portfolio</Link>
               </p>
               <p>
-                <a href="About Us">About Us</a>
+                <Link to="/services">Services</Link>
               </p>
               <p>
-                <a href="Contact Us">Contact Us</a>
+                <Link to="/contact">Contact Us</Link>
               </p>
             </div>
             <div className="footer-midB">

@@ -2,28 +2,26 @@ import React, { useState, useEffect } from "react";
 import "./herosection.css";
 import "animate.css";
 import Img1 from "../../assets/bg1.jpg";
-import Img2 from "../../assets/bg2.jpg";
+import Img2 from "../../assets/bg2.jpeg";
 
 const images = [
   {
     path: Img1,
     itemName: "Image 1",
-    title:
-      "FROM FOOD AND BEEVRAGE TO METALS AND PULP AND PAPER, PROJECT DELIVERY SOLUTIONS ACROSS INDUSTRIAL MARKETS.",
-    para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    title: "Draft your imagination with us!",
+    para: "Our dedicated architects provide the best 3D modelling and rendering services for both commercial and residential structures. Be it interior or exterior, we here at Aron integrate your design ideas with our creative thoughts to make your visions a reality.",
   },
   {
     path: Img2,
     itemName: "Image 2",
-    title:
-      "The art of medicine consists of amusing the patient while nature cures the disease.",
-    para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    title: "Structural Design",
+    para: "With innovative and cost-effective structural solutions, our technical team expertise on design of timber, steel and concrete construction and any other structural material standards throughout the industry.",
   },
   {
     path: Img1,
     itemName: "Image 3",
-    title: "Empowering Health and Wellness for Your Path to a Vibrant Life.",
-    para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    title: "Collaboration with DEKAT Engineering LLC",
+    para: "Pulling our roots from the other end of the globe, we provide 24/7 hours services with an integrated technical team that can deliver collaborative solutions.",
   },
   // Add more image paths and item names here
 ];
@@ -63,9 +61,9 @@ const FullScreenCarousel = () => {
               <div className="hero-para">
                 <p>{image.para}</p>
               </div>
-              <div className="hero-cta">
+              {/* <div className="hero-cta">
                 <button>Learn more about {image.itemName}</button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

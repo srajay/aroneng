@@ -1,7 +1,7 @@
 import React from "react";
 import "./quote.css";
 import { Parallax } from "react-parallax";
-import BuildingImg from "../../assets/bg2.jpg";
+import BuildingImg from "../../assets/bg2.jpeg";
 
 const Quote = () => {
   return (

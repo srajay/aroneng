@@ -1,6 +1,7 @@
 import React from "react";
 import "./portfoliopage.css";
-import BackgroundImg from "../../assets/bg2.jpg";
+import BackgroundImg from "../../assets/bg2.jpeg";
+import { Data } from "./PortfolioData";
 
 const PortfolioPage = () => {
   return (
@@ -24,7 +25,29 @@ const PortfolioPage = () => {
           </div>
         </div>
         <div className="portfolio-content">
-          <p>Add more section here . . .</p>
+          <div className="hr-line"></div>
+          {Data.map((items, index) => {
+            return (
+              <>
+                <div key={index} className="content-card-container">
+                  <div className="content-card">
+                    <div className="content-card-img">
+                      <img
+                        src={items.images}
+                        alt="3D modelling and rendering"
+                      />
+                    </div>
+                    <div className="content-card-text">
+                      <h1>{items.title}</h1>
+                      <h4>{items.location}</h4>
+                      <p>{items.para}</p>
+                    </div>
+                  </div>
+                  <div className="hr-line"></div>
+                </div>
+              </>
+            );
+          })}
         </div>
       </div>
     </>

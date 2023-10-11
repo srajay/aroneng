@@ -1,7 +1,6 @@
 .about {
   display: flex;
   flex-wrap: wrap;
-  /* column-gap: 40px; */
   justify-content: space-between;
   margin-top: 60px;
   padding-left: 200px;
@@ -13,7 +12,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  width: 60%;
+  /* background-color: #000; */
 }
 .about-content-text > p {
   font-size: 20px;
@@ -25,14 +25,17 @@
   display: flex;
   column-gap: 30px;
 }
-.about-btn > button {
-  width: 200px;
+.about-btn > a > button {
+  width: 350px;
   height: 60px;
   border-style: none;
   font-size: 20px;
   color: #fff;
   background-color: #fea12a;
   cursor: pointer;
+}
+.about-btn > a > button:hover {
+  background-color: #eb8500;
 }
 /* .about-img {
   display: flex;
@@ -56,6 +59,8 @@
   flex-direction: column;
   row-gap: 20px;
   text-align: left;
+  width: 30%;
+  /* background-color: aquamarine; */
 }
 
 .about-data > .data {
@@ -69,17 +74,15 @@
   height: 80%;
   background-color: #fea12a;
 }
-.data-revenue > h1,
-.data-craft > h1,
-.data-rank > h1 {
-  font-size: 45px;
+
+.data-content > h1 {
+  font-size: 30px;
 }
 
-.data-revenue > p,
-.data-craft > p,
-.data-rank > p {
-  font-size: 20px;
-  margin-top: -20px;
+.data-content > p {
+  font-size: 16px;
+  margin-top: -10px;
+  color: #787878;
 }
 
 @media screen and (max-width: 768px) {

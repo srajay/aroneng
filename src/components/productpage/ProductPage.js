@@ -1,6 +1,6 @@
 import React from "react";
 import "./productpage.css";
-import BackgroundImg from "../../assets/bg2.jpg";
+import BackgroundImg from "../../assets/bg2.jpeg";
 
 const ProductPage = () => {
   return (

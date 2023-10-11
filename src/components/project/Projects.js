@@ -1,7 +1,7 @@
 import React from "react";
 import "./projects.css";
 import Img1 from "../../assets/bg1.jpg";
-import Img2 from "../../assets/bg2.jpg";
+import Img2 from "../../assets/bg2.jpeg";
 
 const Projects = () => {
   const carddata = [

@@ -1,6 +1,6 @@
 import React from "react";
 import "./meetuspage.css";
-import BackgroundImg from "../../assets/bg2.jpg";
+import BackgroundImg from "../../assets/bg2.jpeg";
 
 const MeetusPage = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import "./carrierpage.css";
-import BackgroundImg from "../../assets/bg2.jpg";
+import BackgroundImg from "../../assets/bg2.jpeg";
 
 const CarrierPage = () => {
   return (

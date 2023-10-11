@@ -10,7 +10,7 @@ const AronServices = () => {
       <div className="aronservices">
         <div className="aron-content">
           <p onClick={() => setShow(!show)}>
-            ARON SERVICES {show ? <span>-</span> : <span>+</span>}
+            Frequently Asked Question {show ? <span>-</span> : <span>+</span>}
           </p>
         </div>
         {show && (

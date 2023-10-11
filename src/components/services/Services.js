@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "animate.css";
 import "./services.css";
 import { Data } from "./Data";
@@ -12,7 +13,9 @@ const Services = () => {
             <h1>Construction and Structural Engineering Services</h1>
           </div>
           <div className="services-cta">
-            <button>More Services</button>
+            <Link to="/services">
+              <button>More Services</button>
+            </Link>
           </div>
         </div>
         <div className="card ">

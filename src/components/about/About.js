@@ -9,40 +9,60 @@ const About = () => {
         <div className="about-content">
           <div className="about-content-text">
             <p>
-              Kiewit is one of North America’s largest and most respected
-              engineering and construction organizations. Kiewit’s commitment to
-              safety, quality and environmental stewardship are ingrained in
-              everything we do. It’s visible in our core values, the work that
-              we build and in our people.
+              Aron Engineering is a Nepal based design firm which mainly caters
+              to structural design of components, drafting, modelling and
+              rendering of structures. Regardless of complexity or scale, our
+              dynamic team's professional standards, technical excellence, safe,
+              innovative and sustainable engineering solutions are crafted to
+              empower your challenging projects.
             </p>
-            <p>Learn more about Kiewit.</p>
+            <p>
+              Our collaboration with DEKAT Engineering LLC offers an integrated
+              technical team comprised of highly competent engineers and
+              architects from both Nepal and the United States ensuring the
+              highest-quality, cost-effective products on time which is our
+              primary objective.
+            </p>
+            {/* <p>Learn more about DEKAT.</p> */}
           </div>
           <div className="about-btn">
-            <button>Engineering</button>
-            <button>Construction</button>
+            <a href="https://dekatengineering.com/">
+              <button>Learn more about DEKAT</button>
+            </a>
+
+            {/* <button>Construction</button> */}
           </div>
         </div>
         <div className="about-data">
           <div className="data">
             <div className="side-rectangle"></div>
-            <div className="data-revenue">
-              <h1>Feature1</h1>
-              <p>2022 Revenues</p>
+            <div className="data-content">
+              <h1>Fast Turnaround</h1>
+              <p>
+                24/7 working hours with experts from both Nepal and United
+                States
+              </p>
             </div>
           </div>
 
           <div className="data">
             <div className="side-rectangle"></div>
-            <div className="data-craft">
-              <h1>Feature2</h1>
-              <p>Craft and staff employees</p>
+            <div className="data-content">
+              <h1>Licensed Professionals</h1>
+              <p>
+                Experts with hands-on experience familiar with world-wide design
+                codes
+              </p>
             </div>
           </div>
           <div className="data">
             <div className="side-rectangle"></div>
-            <div className="data-rank">
-              <h1>Feature3</h1>
-              <p>Rank in ENR's list of Top 400</p>
+            <div className="data-content">
+              <h1>Integrated and cost-effective products</h1>
+              <p>
+                Delivering a comprehensive answer to all of your structural and
+                architectural needs
+              </p>
             </div>
           </div>
         </div>

@@ -53,20 +53,20 @@ const NavSection = () => {
                 <ArrowDropDownIcon />
               </button>
               <div class="dropdown-content">
-                <Link to="/meetus">
+                <Link to="/teameverest">
                   <p
-                    className={activeNavItem === "meetus" ? "active" : ""}
-                    onClick={() => handleNavItemClick("meetus")}
+                    className={activeNavItem === "teameverest" ? "active" : ""}
+                    onClick={() => handleNavItemClick("teameverest")}
                   >
-                    MEET US1
+                    Team Everest
                   </p>
                 </Link>
-                <Link to="/meetus">
+                <Link to="/teamelbert">
                   <p
-                    className={activeNavItem === "meetus" ? "active" : ""}
-                    onClick={() => handleNavItemClick("meetus")}
+                    className={activeNavItem === "teamelbert" ? "active" : ""}
+                    onClick={() => handleNavItemClick("teamelbert")}
                   >
-                    MEET US2
+                    Team Elbert
                   </p>
                 </Link>
               </div>

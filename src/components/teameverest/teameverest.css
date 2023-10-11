@@ -1,0 +1,97 @@
+.everest-page {
+  margin-top: 40px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.everest-container {
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+}
+.everest-box {
+  background: rgba(0, 0, 0, 0.55);
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.everest-title > h1 {
+  color: #fff;
+  font-family: "playfair display";
+  font-size: 50px;
+  text-align: center;
+}
+
+.everest-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  margin-top: 60px;
+}
+.managing-director {
+  display: flex;
+  justify-content: space-between;
+}
+.managing-director-img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.managing-director-img > img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.managing-director-text {
+  text-align: left;
+  width: 600px;
+}
+.managing-director-text > h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.managing-director-text > h4 {
+  color: #787878;
+  margin-top: -30px;
+}
+.managing-director-text > p {
+  margin-top: 50px;
+  letter-spacing: 0.5px;
+}
+
+.team-header {
+  text-align: left;
+}
+.members-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  justify-content: space-between;
+}
+.members-list-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.members-list-card > img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.members-list-card-text {
+  text-align: center;
+  width: 200px;
+}
+.members-list-card-text > p {
+  font-size: 14px;
+  margin-top: -15px;
+  color: #787878;
+}

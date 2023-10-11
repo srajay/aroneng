@@ -37,3 +37,122 @@
   text-align: center;
   margin-top: -5px;
 }
+.services-page-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  margin-top: 60px;
+}
+.services-content-first {
+  display: flex;
+  column-gap: 40px;
+}
+.first-img {
+  width: 450px;
+  height: 500px;
+  object-fit: cover;
+}
+.first-img > img {
+  width: 450px;
+  height: 500px;
+  object-fit: cover;
+}
+.first-content {
+  text-align: left;
+}
+.first-content > p {
+  color: #787878;
+}
+
+.services-content-second {
+  display: flex;
+  flex-direction: column;
+}
+.services-content-second > h3 {
+  text-align: left;
+}
+.united-state {
+  text-align: left;
+  margin-top: -20px;
+}
+.united-state > h1 {
+  color: #fea12a;
+}
+
+.united-services-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+.list-card {
+  width: 350px;
+  height: auto;
+}
+.list-card > img {
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.nepal {
+  text-align: left;
+}
+.nepal > h1 {
+  color: #fea12a;
+}
+
+.nepal-services-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+.nepal-services-list > .list-card {
+  width: 350px;
+  height: auto;
+  background-color: #fea12a;
+}
+.nepal-services-list > .list-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nepal-services-list > .list-card > img {
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+}
+.nepal-services-list > .list-card > h4 {
+  color: #fff;
+}
+
+.services-content-third {
+  display: flex;
+  flex-direction: column;
+}
+.services-content-third > h1 {
+  text-align: left;
+}
+.other-services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 40px;
+}
+
+.other-services-list > .list-card {
+  width: 350px;
+  height: 380px;
+  background-color: #fea12a;
+}
+.other-services-list > .list-card > img {
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+}
+.other-services-list > .list-card > h4 {
+  text-align: center;
+  color: #fff;
+}
