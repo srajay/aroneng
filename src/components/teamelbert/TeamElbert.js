@@ -1,6 +1,7 @@
 import React from "react";
 import "./teamelbert.css";
 import Profile1 from "../../assets/bg3.jpg";
+import GoToTop from "../GoToTop";
 
 const TeamElbert = () => {
   return (
@@ -55,6 +56,7 @@ const TeamElbert = () => {
           </div>
         </div>
       </div>
+      <GoToTop />
     </>
   );
 };

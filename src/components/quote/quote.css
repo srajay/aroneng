@@ -27,12 +27,23 @@
   color: #fff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .quote {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .quote-text > h1 {
     font-size: 40px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .quote-text > h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .quote {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

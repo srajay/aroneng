@@ -13,7 +13,7 @@ const Header = () => {
         <div className="header-content">
           <div className="header-left">
             <a href="info@aronengineering.com">
-              <p>
+              <p className="header-icon">
                 <DraftsIcon />
               </p>
               <p>info@aronengineering.com</p>
@@ -21,16 +21,32 @@ const Header = () => {
           </div>
           <div className="header-right">
             <div className="header-links">
-              <a href="https://facebook.com/aronengineering">
+              <a
+                href="https://facebook.com/aronengineering"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <FacebookIcon />
               </a>
-              <a href="https://linkedin.com/aronengineering">
+              <a
+                href="https://linkedin.com/aronengineering"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <LinkedInIcon />
               </a>
-              <a href="https://youtube.com/aronengineering">
+              <a
+                href="https://youtube.com/aronengineering"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <YouTubeIcon />
               </a>
-              <a href="https://instagram.com/aronengineering">
+              <a
+                href="https://instagram.com/aronengineering"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <InstagramIcon />
               </a>
             </div>

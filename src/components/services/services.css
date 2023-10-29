@@ -63,6 +63,36 @@
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1440px) {
+  .card {
+    column-gap: 30px;
+  }
+  .card-text {
+    width: 325px;
+  }
+  .services-card > img {
+    width: 325px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .services {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .services-title > h1 {
+    font-size: 40px;
+  }
+
+  .card-text {
+    width: 285px;
+  }
+  .services-card > img {
+    width: 285px;
+  }
+  .card {
+    column-gap: 34px;
+  }
+}
 @media screen and (max-width: 768px) {
   .services {
     padding-left: 20px;

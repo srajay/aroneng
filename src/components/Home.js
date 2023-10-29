@@ -4,7 +4,7 @@ import Services from "./services/Services";
 // import Projects from "./project/Projects";
 import About from "./about/About";
 import Quote from "./quote/Quote";
-import AronServices from "./aronservices/AronServices";
+// import AronServices from "./aronservices/AronServices";
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
       <About />
       <Services />
       <Quote />
-      <AronServices />
+      {/* <AronServices /> */}
       {/* <Projects /> */}
     </>
   );

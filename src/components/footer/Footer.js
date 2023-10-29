@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="footer-left">
               <div className="footer-logo">
                 <Link to="/">
-                  <h2>WEBAPP</h2>
+                  <h2>ARON ENGINEERING</h2>
                 </Link>
               </div>
               <div className="company-info">
@@ -84,8 +84,8 @@ const Footer = () => {
           </div>
           <div className="footer-copyright">
             <p>
-              ALL RIGHTS RESERVED 2023 | &#169; WEBAPP | DESIGNED BY BYTETECH
-              SOLUTION
+              ALL RIGHTS RESERVED 2023 | &#169; ARONENGINEERING | DESIGNED BY
+              MarginTech
             </p>
           </div>
         </div>

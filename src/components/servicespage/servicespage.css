@@ -51,11 +51,20 @@
   width: 450px;
   height: 500px;
   object-fit: cover;
+  position: relative;
 }
 .first-img > img {
   width: 450px;
   height: 500px;
   object-fit: cover;
+}
+.first-img > h1 {
+  position: absolute;
+  top: 10px;
+  left: 5%;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 0px;
 }
 .first-content {
   text-align: left;
@@ -88,6 +97,15 @@
 .list-card {
   width: 350px;
   height: auto;
+  position: relative;
+}
+.list-card > h1 {
+  position: absolute;
+  top: 10px;
+  left: 5%;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 0px;
 }
 .list-card > img {
   width: 350px;
@@ -109,18 +127,19 @@
   row-gap: 40px;
 }
 .nepal-services-list > .list-card {
-  width: 350px;
-  height: auto;
-  background-color: #fea12a;
-}
-.nepal-services-list > .list-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 540px;
+  height: auto;
+  background-color: #fea12a;
 }
+/* .nepal-services-list > .list-card {
+  
+} */
 .nepal-services-list > .list-card > img {
-  width: 350px;
+  width: 540px;
   height: 300px;
   object-fit: cover;
 }

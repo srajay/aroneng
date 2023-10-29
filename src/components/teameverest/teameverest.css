@@ -34,35 +34,34 @@
 }
 .managing-director {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 38px;
+}
+.managing-director-content {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
-.managing-director-img {
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 20px;
-}
-.managing-director-img > img {
-  width: 400px;
+
+.managing-director-content > img {
+  width: 350px;
   height: 400px;
   object-fit: cover;
   border-radius: 20px;
 }
 .managing-director-text {
-  text-align: left;
-  width: 600px;
+  text-align: center;
+  width: 300px;
 }
 .managing-director-text > h1 {
-  font-size: 50px;
+  font-size: 30px;
   text-transform: uppercase;
 }
 .managing-director-text > h4 {
   color: #787878;
-  margin-top: -30px;
-}
-.managing-director-text > p {
-  margin-top: 50px;
-  letter-spacing: 0.5px;
+  margin-top: -10px;
 }
 
 .team-header {
@@ -72,12 +71,12 @@
   display: flex;
   flex-wrap: wrap;
   row-gap: 30px;
-  justify-content: space-between;
+  column-gap: 40px;
 }
 .members-list-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 .members-list-card > img {

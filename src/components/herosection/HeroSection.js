@@ -3,6 +3,7 @@ import "./herosection.css";
 import "animate.css";
 import Img1 from "../../assets/bg1.jpg";
 import Img2 from "../../assets/bg2.jpeg";
+import GoToTop from "../GoToTop";
 
 const images = [
   {
@@ -42,47 +43,52 @@ const FullScreenCarousel = () => {
   };
 
   return (
-    <div className="full-screen-carousel">
-      {images.map((image, index) => (
-        <div
-          key={index}
-          className={`carousel-slide ${currentImage === index ? "active" : ""}`}
-          style={{
-            backgroundImage: `url(${image.path})`,
-          }}
-        >
-          <div className="hero-container">
-            <div key={index} className="hero-content">
-              <div className="hero-title">
-                <h1>
-                  <mark>{image.title}</mark>
-                </h1>
-              </div>
-              <div className="hero-para">
-                <p>{image.para}</p>
-              </div>
-              {/* <div className="hero-cta">
+    <>
+      <div className="full-screen-carousel">
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`carousel-slide ${
+              currentImage === index ? "active" : ""
+            }`}
+            style={{
+              backgroundImage: `url(${image.path})`,
+            }}
+          >
+            <div className="hero-container">
+              <div key={index} className="hero-content">
+                <div className="hero-title">
+                  <h1>
+                    <mark>{image.title}</mark>
+                  </h1>
+                </div>
+                <div className="hero-para">
+                  <p>{image.para}</p>
+                </div>
+                {/* <div className="hero-cta">
                 <button>Learn more about {image.itemName}</button>
               </div> */}
+              </div>
             </div>
           </div>
-        </div>
-      ))}
-
-      {/* Slide show indicator */}
-
-      <ol className="carousel-list">
-        {images.map((image, index) => (
-          <li
-            key={index}
-            className={currentImage === index ? "active" : ""}
-            onClick={() => handleItemClick(index)}
-          >
-            {image.itemName}
-          </li>
         ))}
-      </ol>
-    </div>
+
+        {/* Slide show indicator */}
+
+        <ol className="carousel-list">
+          {images.map((image, index) => (
+            <li
+              key={index}
+              className={currentImage === index ? "active" : ""}
+              onClick={() => handleItemClick(index)}
+            >
+              {image.itemName}
+            </li>
+          ))}
+        </ol>
+      </div>
+      <GoToTop />
+    </>
   );
 };
 
