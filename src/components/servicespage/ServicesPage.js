@@ -90,7 +90,7 @@ const ServicesPage = () => {
               <div className="united-services-list">
                 <div className="list-card">
                   <img src={DeckDesign} alt="deck design" />
-                  <h1>02</h1>
+
                   <h4>Deck Design</h4>
                   <p>
                     We cover an all-inclusive design package for all types of
@@ -99,7 +99,7 @@ const ServicesPage = () => {
                 </div>
                 <div className="list-card">
                   <img src={PatioCover} alt="patio cover" />
-                  <h1>03</h1>
+
                   <h4>Pergola & Patio/Deck CoverDeck Design</h4>
                   <p>
                     We design multiple kinds of pergolas, gazebo, deck/roof
@@ -109,7 +109,7 @@ const ServicesPage = () => {
                 </div>
                 <div className="list-card">
                   <img src={TinyHouse} alt="tinyhouse" />
-                  <h1>04</h1>
+
                   <h4>Design of Tiny Homes </h4>
                   <p>
                     We also design tiny wooden houses inclusive of shear wall
@@ -124,32 +124,32 @@ const ServicesPage = () => {
               <div className="nepal-services-list">
                 <div className="list-card">
                   <img src={CoveredHall} alt="covered hall" />
-                  <h1>05</h1>
+
                   <h4>Multi-purpose covered hall</h4>
                 </div>
                 <div className="list-card">
                   <img src={Stadium} alt="stadium" />
-                  <h1>06</h1>
+
                   <h4>Stadium</h4>
                 </div>
                 <div className="list-card">
                   <img src={CommercialStructure} alt="commercial structure" />
-                  <h1>07</h1>
+
                   <h4>Commercial Structures</h4>
                 </div>
                 <div className="list-card">
                   <img src={ResidentialSturcture} alt="residential structure" />
-                  <h1>08</h1>
+
                   <h4>Residential Structures</h4>
                 </div>
                 <div className="list-card">
                   <img src={PublicBuilding} alt="public building" />
-                  <h1>09</h1>
+
                   <h4>Public Buildings</h4>
                 </div>
                 <div className="list-card">
                   <img src={Landscaping} alt="landscaping" />
-                  <h1>10</h1>
+
                   <h4>Landscaping</h4>
                 </div>
               </div>
@@ -161,63 +161,63 @@ const ServicesPage = () => {
             <div className="other-services-list">
               <div className="list-card">
                 <img src={GeoTechnical} alt="geo technical" />
-                <h1>11</h1>
+                <h1>02</h1>
                 <h4>Geotechnical/ Geological Design</h4>
               </div>
               <div className="list-card">
                 <img src={UrbanPlanning} alt="urban planning" />
-                <h1>12</h1>
+                <h1>03</h1>
                 <h4>Urban Planning </h4>
               </div>
               <div className="list-card">
                 <img src={Transportation} alt="transportation" />
-                <h1>13</h1>
+                <h1>04</h1>
                 <h4>Transportation</h4>
               </div>
 
               <div className="list-card">
                 <img src={WaterSupply} alt="watersupply" />
-                <h1>14</h1>
+                <h1>05</h1>
                 <h4>Water Supply & Sanitary Design</h4>
               </div>
               <div className="list-card">
                 <img src={ElectricalWorks} alt="electrical works" />
-                <h1>15</h1>
+                <h1>06</h1>
                 <h4>Electrical Works </h4>
               </div>
               <div className="list-card">
                 <img src={Sewage} alt="sewage" />
-                <h1>16</h1>
+                <h1>07</h1>
                 <h4>Sewerage & Land-fill Site Design</h4>
               </div>
               <div className="list-card">
                 <img src={Irrigation} alt="irrigation" />
-                <h1>17</h1>
+                <h1>08</h1>
                 <h4>Irrigation</h4>
               </div>
               <div className="list-card">
                 <img src={RemoteSensing} alt="remote sensing" />
-                <h1>18</h1>
+                <h1>09</h1>
                 <h4>Remote Sensing based survey and mapping </h4>
               </div>
               <div className="list-card">
                 <img src={Valuation} alt="valuation" />
-                <h1>19</h1>
+                <h1>10</h1>
                 <h4>Valuation </h4>
               </div>
               <div className="list-card">
                 <img src={ServiceImg1} alt="feasibility study" />
-                <h1>20</h1>
+                <h1>11</h1>
                 <h4>Feasibility Study </h4>
               </div>
               <div className="list-card">
                 <img src={ServiceImg1} alt="river training works" />
-                <h1>21</h1>
+                <h1>12</h1>
                 <h4>River- training works </h4>
               </div>
               <div className="list-card">
                 <img src={SoftwareTraining} alt="software training" />
-                <h1>22</h1>
+                <h1>13</h1>
                 <h4>Software trainings </h4>
               </div>
             </div>

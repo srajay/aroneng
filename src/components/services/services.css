@@ -74,7 +74,8 @@
     width: 325px;
   }
 }
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 1140px) {
   .services {
     padding-left: 50px;
     padding-right: 50px;
@@ -82,7 +83,10 @@
   .services-title > h1 {
     font-size: 40px;
   }
-
+  .card {
+    justify-content: center;
+    align-items: center;
+  }
   .card-text {
     width: 285px;
   }

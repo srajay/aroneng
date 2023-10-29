@@ -77,7 +77,11 @@
     column-gap: 120px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1140px) {
+  .footer-content {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
   .footer-left {
     text-align: center;
   }

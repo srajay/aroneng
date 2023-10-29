@@ -94,3 +94,22 @@
   margin-top: -15px;
   color: #787878;
 }
+
+@media screen and (max-width: 1140px) {
+  .everest-page {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .managing-director-content > img {
+    width: 320px;
+  }
+  .managing-director {
+    column-gap: 35px;
+  }
+  .members-list {
+    column-gap: 30px;
+  }
+  .members-list-card > img {
+    width: 235px;
+  }
+}

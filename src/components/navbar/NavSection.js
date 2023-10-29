@@ -48,21 +48,16 @@ const NavSection = () => {
                 SERVICES
               </p>
             </Link>
-            <div class="dropdown">
-              <button class="dropbtn">
-                MEET US
-                <ArrowDropDownIcon />
-              </button>
-              <div class="dropdown-content">
-                <Link to="/teameverest">
-                  <p
-                    className={activeNavItem === "teameverest" ? "active" : ""}
-                    onClick={() => handleNavItemClick("teameverest")}
-                  >
-                    Team Everest
-                  </p>
-                </Link>
-                {/* <Link to="/teamelbert">
+
+            <Link to="/teameverest">
+              <p
+                className={activeNavItem === "teameverest" ? "active" : ""}
+                onClick={() => handleNavItemClick("teameverest")}
+              >
+                Team Everest
+              </p>
+            </Link>
+            {/* <Link to="/teamelbert">
                   <p
                     className={activeNavItem === "teamelbert" ? "active" : ""}
                     onClick={() => handleNavItemClick("teamelbert")}
@@ -70,8 +65,6 @@ const NavSection = () => {
                     Team Elbert
                   </p>
                 </Link> */}
-              </div>
-            </div>
 
             <Link to="/carrier">
               <p

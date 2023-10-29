@@ -36,6 +36,13 @@
 }
 
 /* Responsive at 768px */
+@media screen and (max-width: 1140px) {
+  .header-content {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+/* Responsive at 768px */
 @media screen and (max-width: 768px) {
   .header-content {
     padding-left: 50px;

@@ -27,7 +27,7 @@
   color: #fff;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1140px) {
   .quote {
     padding-left: 50px;
     padding-right: 50px;

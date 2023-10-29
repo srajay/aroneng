@@ -131,12 +131,14 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1140px) {
   .portfolio-page {
     padding-left: 50px;
     padding-right: 50px;
   }
   .portfolio-content {
+    justify-content: center;
+    align-items: center;
     column-gap: 40px;
   }
   .portfolio-content-card {
