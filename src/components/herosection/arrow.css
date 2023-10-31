@@ -1,0 +1,16 @@
+.arrow-container > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #fea12a;
+  background-color: transparent;
+  color: #fff;
+  opacity: 50%;
+  cursor: pointer;
+}
+.arrow-container > button:hover {
+  background-color: #fea12a;
+}

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./sliderone.css";
+import Arrow from "./SliderArrow";
 import Img1 from "../../assets/Shiva Statue/ShivaStatue1.jpg";
 
 const photo = [
@@ -26,6 +27,20 @@ const SliderTwenty = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const nextSlide = () => {
+    setPresentImage((presentImage + 1) % photo.length);
+  };
+
+  const prevSlide = () => {
+    setPresentImage((presentImage - 1 + photo.length) % photo.length);
+  };
+
+  const handleOverlayClick = (e) => {
+    if (e.target === e.currentTarget) {
+      toggleModal();
+    }
+  };
+
   return (
     <>
       <div className="slider-one">
@@ -34,7 +49,7 @@ const SliderTwenty = () => {
         </div>
         <h1>Shiva Statue</h1>
         {showModal && (
-          <div className="modal">
+          <div className="modal" onClick={handleOverlayClick}>
             <div className="modal-content">
               <span className="close" onClick={toggleModal}>
                 &times;
@@ -56,9 +71,13 @@ const SliderTwenty = () => {
                       </>
                     );
                   })}
+                  <div className="slider-arrow-symbol">
+                    <Arrow direction="prev" onClick={prevSlide} />
+                    <Arrow direction="next" onClick={nextSlide} />
+                  </div>
                 </div>
                 <div className="portfolio-content-card-text">
-                  <h1>Shiva Statue</h1>
+                  {/* <h1>Shiva Statue</h1> */}
                   <h4>Location: Baglung</h4>
                   <p>
                     Design of Shiva and Ganesh statue as part of the park

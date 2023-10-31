@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./sliderone.css";
+import Arrow from "./SliderArrow";
 import Img1 from "../../assets/Multi-purpose Truss Hall/HallTruss1.JPG";
 
 const photo = [
@@ -26,6 +27,19 @@ const SliderFifteen = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const nextSlide = () => {
+    setPresentImage((presentImage + 1) % photo.length);
+  };
+
+  const prevSlide = () => {
+    setPresentImage((presentImage - 1 + photo.length) % photo.length);
+  };
+  const handleOverlayClick = (e) => {
+    if (e.target === e.currentTarget) {
+      toggleModal();
+    }
+  };
+
   return (
     <>
       <div className="slider-one">
@@ -34,7 +48,7 @@ const SliderFifteen = () => {
         </div>
         <h1>Multi-purpose Truss Hall</h1>
         {showModal && (
-          <div className="modal">
+          <div className="modal" onClick={handleOverlayClick}>
             <div className="modal-content">
               <span className="close" onClick={toggleModal}>
                 &times;
@@ -56,9 +70,13 @@ const SliderFifteen = () => {
                       </>
                     );
                   })}
+                  <div className="slider-arrow-symbol">
+                    <Arrow direction="prev" onClick={prevSlide} />
+                    <Arrow direction="next" onClick={nextSlide} />
+                  </div>
                 </div>
                 <div className="portfolio-content-card-text">
-                  <h1>Multi-purpose Truss Hall</h1>
+                  {/* <h1>Multi-purpose Truss Hall</h1> */}
                   <h4>Location: Dhangadi (Construction ongoing)</h4>
                   <p>
                     Design of a multi-purpose commercial hall with a truss

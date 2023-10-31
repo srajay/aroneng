@@ -26,7 +26,11 @@ const About = () => {
             {/* <p>Learn more about DEKAT.</p> */}
           </div>
           <div className="about-btn">
-            <a href="https://dekatengineering.com/">
+            <a
+              href="https://dekatengineering.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <button>Learn more about DEKAT</button>
             </a>
 

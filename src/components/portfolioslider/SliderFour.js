@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./sliderone.css";
+import Arrow from "./SliderArrow";
 import Img1 from "../../assets/interiordesign/interiordesign1.png";
 import Img2 from "../../assets/interiordesign/interiordesign2.png";
 import Img3 from "../../assets/interiordesign/interiordesign3.png";
@@ -41,6 +42,20 @@ const SliderFour = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const nextSlide = () => {
+    setPresentImage((presentImage + 1) % photo.length);
+  };
+
+  const prevSlide = () => {
+    setPresentImage((presentImage - 1 + photo.length) % photo.length);
+  };
+
+  const handleOverlayClick = (e) => {
+    if (e.target === e.currentTarget) {
+      toggleModal();
+    }
+  };
+
   return (
     <>
       <div className="slider-one">
@@ -49,7 +64,7 @@ const SliderFour = () => {
         </div>
         <h1>Interior Design</h1>
         {showModal && (
-          <div className="modal">
+          <div className="modal" onClick={handleOverlayClick}>
             <div className="modal-content">
               <span className="close" onClick={toggleModal}>
                 &times;
@@ -71,9 +86,13 @@ const SliderFour = () => {
                       </>
                     );
                   })}
+                  <div className="slider-arrow-symbol">
+                    <Arrow direction="prev" onClick={prevSlide} />
+                    <Arrow direction="next" onClick={nextSlide} />
+                  </div>
                 </div>
                 <div className="portfolio-content-card-text">
-                  <h1>Interior Design</h1>
+                  {/* <h1>Interior Design</h1> */}
                   <h4>Location: 6449 Spotted Fawn Run, Littleton CO</h4>
                   <p>
                     The design intent of this project was to renovate the

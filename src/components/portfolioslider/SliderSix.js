@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./sliderone.css";
+import Arrow from "./SliderArrow";
 import Img1 from "../../assets/fireplace&patiocover/patiocover1.jpg";
 import Img2 from "../../assets/fireplace&patiocover/patiocover2.jpg";
 import Img3 from "../../assets/fireplace&patiocover/patiocover3.png";
@@ -50,6 +51,19 @@ const SliderSix = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const nextSlide = () => {
+    setPresentImage((presentImage + 1) % photo.length);
+  };
+
+  const prevSlide = () => {
+    setPresentImage((presentImage - 1 + photo.length) % photo.length);
+  };
+  const handleOverlayClick = (e) => {
+    if (e.target === e.currentTarget) {
+      toggleModal();
+    }
+  };
+
   return (
     <>
       <div className="slider-one">
@@ -58,7 +72,7 @@ const SliderSix = () => {
         </div>
         <h1>Patio Cover, Pergola and Exterior Design</h1>
         {showModal && (
-          <div className="modal">
+          <div className="modal" onClick={handleOverlayClick}>
             <div className="modal-content">
               <span className="close" onClick={toggleModal}>
                 &times;
@@ -80,9 +94,13 @@ const SliderSix = () => {
                       </>
                     );
                   })}
+                  <div className="slider-arrow-symbol">
+                    <Arrow direction="prev" onClick={prevSlide} />
+                    <Arrow direction="next" onClick={nextSlide} />
+                  </div>
                 </div>
                 <div className="portfolio-content-card-text">
-                  <h1>Patio Cover, Pergola and Exterior Design</h1>
+                  {/* <h1>Patio Cover, Pergola and Exterior Design</h1> */}
                   <h4>
                     Location: Multiple locations for different states in the
                     United States

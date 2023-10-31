@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./sliderone.css";
+import Arrow from "./SliderArrow";
 import Img1 from "../../assets/officespacedesign/officespace1.png";
 import Img2 from "../../assets/officespacedesign/officespace2.png";
 import Img3 from "../../assets/officespacedesign/officespace3.png";
@@ -46,6 +47,19 @@ const SliderSeven = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const nextSlide = () => {
+    setPresentImage((presentImage + 1) % photo.length);
+  };
+
+  const prevSlide = () => {
+    setPresentImage((presentImage - 1 + photo.length) % photo.length);
+  };
+  const handleOverlayClick = (e) => {
+    if (e.target === e.currentTarget) {
+      toggleModal();
+    }
+  };
+
   return (
     <>
       <div className="slider-one">
@@ -54,7 +68,7 @@ const SliderSeven = () => {
         </div>
         <h1>Office Space Design</h1>
         {showModal && (
-          <div className="modal">
+          <div className="modal" onClick={handleOverlayClick}>
             <div className="modal-content">
               <span className="close" onClick={toggleModal}>
                 &times;
@@ -76,9 +90,13 @@ const SliderSeven = () => {
                       </>
                     );
                   })}
+                  <div className="slider-arrow-symbol">
+                    <Arrow direction="prev" onClick={prevSlide} />
+                    <Arrow direction="next" onClick={nextSlide} />
+                  </div>
                 </div>
                 <div className="portfolio-content-card-text">
-                  <h1>Office Space Design</h1>
+                  {/* <h1>Office Space Design</h1> */}
                   <h4>Location: Aron Engineering Pvt. Ltd., Maitidevi</h4>
                   <p>
                     The design scope for this project included the interior

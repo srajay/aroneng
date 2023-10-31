@@ -40,13 +40,13 @@
 
 .modal-content {
   background-color: #fff;
-  margin: 10% auto;
+  margin: 4% auto;
   padding: 20px 20px 20px 30px;
   border: 1px solid #888;
   width: 1000px;
-  height: 500px;
+  height: 600px;
   position: relative;
-  overflow: scroll;
+  overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .close {
@@ -60,16 +60,25 @@
 
 .carousel-slider-one {
   position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 80%;
-  height: 400px;
+  top: 5%;
+  /* left: 2%; */
+  width: 95%;
+  height: 460px;
   border-radius: 20px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0;
   transition: opacity 1s ease;
+}
+
+.slider-arrow-symbol {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 45px;
+  top: 40%;
+  width: 85%;
 }
 
 .carousel-slider-one.active {
@@ -103,6 +112,15 @@
   .slider-cover-img img {
     width: 440px;
   }
+  .modal-content {
+    width: 900px;
+  }
+  .carousel-slider-one {
+    height: 400px;
+  }
+  .slider-arrow-symbol {
+    top: 30%;
+  }
 }
 @media screen and (max-width: 768px) {
   .slider-one {
@@ -114,6 +132,18 @@
   .slider-cover-img img {
     width: 100%;
   }
+  .modal-content {
+    width: 680px;
+  }
+  .carousel-slider-one {
+    height: 400px;
+  }
+  .slider-arrow-symbol {
+    top: 30%;
+  }
+  .carousel-one {
+    padding-bottom: 90px;
+  }
 }
 
 @media screen and (max-width: 426px) {
@@ -123,9 +153,36 @@
   .slider-cover-img img {
     height: 300px;
   }
+  .modal-content {
+    width: 380px;
+    padding: 10px;
+  }
+  .carousel-slider-one {
+    height: 400px;
+  }
+  .slider-arrow-symbol {
+    top: 30%;
+    margin-left: 20px;
+  }
+  .carousel-one {
+    padding-top: 160px;
+  }
 }
 @media screen and (max-width: 376px) {
   .slider-one > h1 {
     font-size: 30px;
+  }
+  .modal-content {
+    width: 350px;
+  }
+  .carousel-slider-one {
+    height: 400px;
+  }
+  .slider-arrow-symbol {
+    top: 30%;
+    margin-left: 20px;
+  }
+  .carousel-one {
+    padding-top: 170px;
   }
 }

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./navsection.css";
 import { Link } from "react-router-dom";
-import AronLogo from "../../assets/aron-logo1.png";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import AronLogo from "../../assets/aron-logo.png";
+// import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
@@ -18,7 +18,11 @@ const NavSection = () => {
       <div className="navbarsection">
         <div className="logo">
           <Link to="/">
-            <img src={AronLogo} alt="aronlogo" />
+            <div className="logo-img">
+              <img src={AronLogo} alt="aronlogo" />
+            </div>
+
+            <p>ARON ENGINEERING PVT.LTD</p>
           </Link>
         </div>
         <div className="navbar">
@@ -54,7 +58,7 @@ const NavSection = () => {
                 className={activeNavItem === "teameverest" ? "active" : ""}
                 onClick={() => handleNavItemClick("teameverest")}
               >
-                Team Everest
+                TEAM EVEREST
               </p>
             </Link>
             {/* <Link to="/teamelbert">
@@ -122,31 +126,17 @@ const NavSection = () => {
                   </Link>
                 </li>
 
-                <li class="dropdown-mob">
-                  <button class="dropbtn-mob">
-                    MEET US
-                    <ArrowDropDownIcon />
-                  </button>
-                  <div class="dropdown-content-mob">
-                    <Link to="/teameverest">
-                      <p
-                        className={
-                          activeNavItem === "teameverest" ? "active" : ""
-                        }
-                        onClick={() => handleNavItemClick("teameverest")}
-                      >
-                        Team Everest
-                      </p>
-                    </Link>
-                    {/* <Link to="/teamelbert">
-                  <p
-                    className={activeNavItem === "teamelbert" ? "active" : ""}
-                    onClick={() => handleNavItemClick("teamelbert")}
-                  >
-                    Team Elbert
-                  </p>
-                </Link> */}
-                  </div>
+                <li>
+                  <Link to="/teameverest">
+                    <p
+                      className={
+                        activeNavItem === "teameverest" ? "active" : ""
+                      }
+                      onClick={() => handleNavItemClick("teameverest")}
+                    >
+                      TEAM EVEREST
+                    </p>
+                  </Link>
                 </li>
 
                 <li>

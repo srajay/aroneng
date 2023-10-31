@@ -65,6 +65,7 @@
   font-size: 50px;
   font-weight: 700;
   line-height: 0px;
+  color: #fff;
 }
 .first-content {
   text-align: left;
@@ -133,18 +134,19 @@
   align-items: center;
   width: 350px;
   height: auto;
-  background-color: #fea12a;
+  background-color: #ebebeb;
+  color: #000;
+  cursor: pointer;
 }
-/* .nepal-services-list > .list-card {
-  
-} */
+.nepal-services-list > .list-card:hover {
+  background-color: #fea12a;
+  color: #fff;
+}
+
 .nepal-services-list > .list-card > img {
   width: 350px;
   height: 300px;
   object-fit: cover;
-}
-.nepal-services-list > .list-card > h4 {
-  color: #fff;
 }
 
 .services-content-third {
@@ -164,16 +166,43 @@
 .other-services-list > .list-card {
   width: 350px;
   height: 380px;
+  text-align: center;
+  background-color: #ebebeb;
+  color: #000;
+  cursor: pointer;
+}
+.other-services-list > .list-card:hover {
   background-color: #fea12a;
+  color: #fff;
 }
 .other-services-list > .list-card > img {
   width: 350px;
   height: 300px;
   object-fit: cover;
 }
-.other-services-list > .list-card > h4 {
-  text-align: center;
+.other-services-list > .list-card > h1 {
   color: #fff;
+}
+
+@media screen and (max-width: 1440px) {
+  .list-card {
+    width: 320px;
+  }
+  .list-card > img {
+    width: 320px;
+  }
+  .nepal-services-list > .list-card {
+    width: 320px;
+  }
+  .nepal-services-list > .list-card > img {
+    width: 320px;
+  }
+  .other-services-list > .list-card {
+    width: 320px;
+  }
+  .other-services-list > .list-card > img {
+    width: 320px;
+  }
 }
 
 @media screen and (max-width: 1140px) {
@@ -198,5 +227,87 @@
   }
   .other-services-list > .list-card > img {
     width: 320px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services-content-first {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .first-img {
+    width: 100%;
+  }
+  .first-img > img {
+    width: 100%;
+  }
+
+  .list-card {
+    width: 313px;
+  }
+  .list-card > img {
+    width: 313px;
+  }
+  .nepal-services-list > .list-card {
+    width: 313px;
+  }
+  .nepal-services-list > .list-card > img {
+    width: 313px;
+  }
+  .other-services-list > .list-card {
+    width: 313px;
+  }
+  .other-services-list > .list-card > img {
+    width: 313px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .services-page {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .services-box > div > h1 {
+    font-size: 30px;
+  }
+
+  .services-box > div {
+    margin-left: 40px;
+  }
+  .first-img {
+    width: 100%;
+    height: 400px;
+  }
+  .first-img > img {
+    width: 100%;
+    height: 400px;
+  }
+
+  .list-card {
+    width: 100%;
+  }
+  .list-card > img {
+    width: 100%;
+  }
+  .nepal-services-list > .list-card {
+    width: 100%;
+  }
+  .nepal-services-list > .list-card > img {
+    width: 100%;
+  }
+  .other-services-list > .list-card {
+    width: 100%;
+  }
+  .other-services-list > .list-card > img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .services-box > div {
+    margin-left: 20px;
+  }
+  .services-box > div > h1 {
+    font-size: 30px;
   }
 }

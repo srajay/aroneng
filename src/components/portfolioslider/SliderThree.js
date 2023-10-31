@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./sliderone.css";
+import Arrow from "./SliderArrow";
 import Img1 from "../../assets/shippingcontainer/container1.png";
 import Img2 from "../../assets/shippingcontainer/container2.png";
 import Img3 from "../../assets/shippingcontainer/container3.png";
@@ -36,6 +37,19 @@ const SliderThree = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const nextSlide = () => {
+    setPresentImage((presentImage + 1) % photo.length);
+  };
+
+  const prevSlide = () => {
+    setPresentImage((presentImage - 1 + photo.length) % photo.length);
+  };
+  const handleOverlayClick = (e) => {
+    if (e.target === e.currentTarget) {
+      toggleModal();
+    }
+  };
+
   return (
     <>
       <div className="slider-one">
@@ -44,7 +58,7 @@ const SliderThree = () => {
         </div>
         <h1>Shipping Container Design</h1>
         {showModal && (
-          <div className="modal">
+          <div className="modal" onClick={handleOverlayClick}>
             <div className="modal-content">
               <span className="close" onClick={toggleModal}>
                 &times;
@@ -66,9 +80,13 @@ const SliderThree = () => {
                       </>
                     );
                   })}
+                  <div className="slider-arrow-symbol">
+                    <Arrow direction="prev" onClick={prevSlide} />
+                    <Arrow direction="next" onClick={nextSlide} />
+                  </div>
                 </div>
                 <div className="portfolio-content-card-text">
-                  <h1>Shipping Container Design</h1>
+                  {/* <h1>Shipping Container Design</h1> */}
                   <h4>Location: Not mentioned</h4>
                   <p>
                     The main aim of this project is to create a beautiful yet

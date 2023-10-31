@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./sliderone.css";
+import Arrow from "./SliderArrow";
 import Img1 from "../../assets/adu/adu1.png";
 import Img2 from "../../assets/adu/adu2.png";
 import Img3 from "../../assets/adu/adu3.png";
@@ -51,6 +52,20 @@ const SliderTwo = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const nextSlide = () => {
+    setPresentImage((presentImage + 1) % photo.length);
+  };
+
+  const prevSlide = () => {
+    setPresentImage((presentImage - 1 + photo.length) % photo.length);
+  };
+
+  const handleOverlayClick = (e) => {
+    if (e.target === e.currentTarget) {
+      toggleModal();
+    }
+  };
+
   return (
     <>
       <div className="slider-one">
@@ -59,7 +74,7 @@ const SliderTwo = () => {
         </div>
         <h1>Accessory Dwelling Unit (ADU) Design</h1>
         {showModal && (
-          <div className="modal">
+          <div className="modal" onClick={handleOverlayClick}>
             <div className="modal-content">
               <span className="close" onClick={toggleModal}>
                 &times;
@@ -81,9 +96,13 @@ const SliderTwo = () => {
                       </>
                     );
                   })}
+                  <div className="slider-arrow-symbol">
+                    <Arrow direction="prev" onClick={prevSlide} />
+                    <Arrow direction="next" onClick={nextSlide} />
+                  </div>
                 </div>
                 <div className="portfolio-content-card-text">
-                  <h1>Accessory Dwelling Unit (ADU) Design</h1>
+                  {/* <h1>Accessory Dwelling Unit (ADU) Design</h1> */}
                   <h4>Location: 2241 Florence St. Aurora CO</h4>
                   <p>
                     The scope of the task included an addition of ADU. The

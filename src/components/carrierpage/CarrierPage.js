@@ -12,7 +12,6 @@ const CarrierPage = () => {
           style={{
             backgroundImage: `url(${BackgroundImg})`,
             backgroundSize: `cover`,
-            backgroundPositionY: `-200px`,
           }}
         >
           <div className="carrier-box">

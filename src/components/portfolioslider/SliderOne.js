@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./sliderone.css";
+import Arrow from "./SliderArrow";
 import Img1 from "../../assets/sunroom/sunroom1.png";
 import Img2 from "../../assets/sunroom/sunroom2.png";
 import Img3 from "../../assets/sunroom/sunroom3.png";
@@ -36,10 +37,24 @@ const SliderOne = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setPresentImage((prevImage) => (prevImage + 1) % photo.length);
-    }, 4000); // Change slide every 2 seconds
+    }, 10000); // Change slide every 2 seconds
 
     return () => clearInterval(interval);
   }, []);
+
+  const nextSlide = () => {
+    setPresentImage((presentImage + 1) % photo.length);
+  };
+
+  const prevSlide = () => {
+    setPresentImage((presentImage - 1 + photo.length) % photo.length);
+  };
+
+  const handleOverlayClick = (e) => {
+    if (e.target === e.currentTarget) {
+      toggleModal();
+    }
+  };
 
   return (
     <>
@@ -50,7 +65,7 @@ const SliderOne = () => {
         <h1>3D modelling and rendering for Sunroom Design</h1>
 
         {showModal && (
-          <div className="modal">
+          <div className="modal" onClick={handleOverlayClick}>
             <div className="modal-content">
               <span className="close" onClick={toggleModal}>
                 &times;
@@ -72,9 +87,13 @@ const SliderOne = () => {
                       </>
                     );
                   })}
+                  <div className="slider-arrow-symbol">
+                    <Arrow direction="prev" onClick={prevSlide} />
+                    <Arrow direction="next" onClick={nextSlide} />
+                  </div>
                 </div>
                 <div className="portfolio-content-card-text">
-                  <h1>3D modelling and rendering for Sunroom Design</h1>
+                  {/* <h1>3D modelling and rendering for Sunroom Design</h1> */}
                   <h4>Location: 75 N Sherman St. Denver CO 80203</h4>
                   <p>
                     The scope of this task includes addition of a sunroom to an
@@ -87,17 +106,6 @@ const SliderOne = () => {
             </div>
           </div>
         )}
-        {/* {photo.map((image, index) => (
-          <div
-            key={index}
-            className={`carousel-slider-one ${
-              presentImage === index ? "active" : ""
-            }`}
-            style={{
-              backgroundImage: `url(${image.path})`,
-            }}
-          ></div>
-        ))} */}
       </div>
     </>
   );

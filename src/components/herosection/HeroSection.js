@@ -3,6 +3,7 @@ import "./herosection.css";
 import "animate.css";
 import Img1 from "../../assets/bg1.jpg";
 import Img2 from "../../assets/bg2.jpeg";
+import Arrow from "./Arrow";
 import GoToTop from "../GoToTop";
 
 const images = [
@@ -38,8 +39,15 @@ const FullScreenCarousel = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const handleItemClick = (index) => {
-    setCurrentImage(index);
+  // const handleItemClick = (index) => {
+  //   setCurrentImage(index);
+  // };
+  const nextSlide = () => {
+    setCurrentImage((currentImage + 1) % images.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentImage((currentImage - 1 + images.length) % images.length);
   };
 
   return (
@@ -73,9 +81,14 @@ const FullScreenCarousel = () => {
           </div>
         ))}
 
+        <div className="arrow-symbol">
+          <Arrow direction="prev" onClick={prevSlide} />
+          <Arrow direction="next" onClick={nextSlide} />
+        </div>
+
         {/* Slide show indicator */}
 
-        <ol className="carousel-list">
+        {/* <ol className="carousel-list">
           {images.map((image, index) => (
             <li
               key={index}
@@ -85,7 +98,7 @@ const FullScreenCarousel = () => {
               {image.itemName}
             </li>
           ))}
-        </ol>
+        </ol> */}
       </div>
       <GoToTop />
     </>

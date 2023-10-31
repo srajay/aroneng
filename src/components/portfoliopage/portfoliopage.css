@@ -112,11 +112,16 @@
   border-radius: 20px;
 } */
 .portfolio-content-card-text {
+  justify-content: center;
+  align-items: center;
   padding-left: 20px;
   padding-right: 20px;
 }
 .portfolio-content-card-text > h4 {
   color: #787878;
+}
+.portfolio-content-card-text > p {
+  font-size: 14px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -168,10 +173,17 @@
   .portfolio-content-card-img {
     height: 300px;
   }
+
+  .portfolio-content-card-text > p {
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 376px) {
   .portfolio-box > div {
     margin-left: 40px;
+  }
+  .portfolio-content-card-text > p {
+    width: 300px;
   }
 }
